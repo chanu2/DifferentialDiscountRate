@@ -4,12 +4,12 @@ import hello.core.discount.DiscountPolicy;
 import hello.core.member.Member;
 import hello.core.member.MemberRepository;
 
-public class OrderServiceImp implements OrderService{
+public class OrderServiceImpl implements OrderService{
 
     private final MemberRepository memberRepository;  // final이 있으면 기본으로 할당을 하던 생성자로 꼭 할당을 해야한다
     private final DiscountPolicy discountPolicy;
 
-    public OrderServiceImp(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
+    public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
         this.memberRepository = memberRepository;
         this.discountPolicy = discountPolicy;
     }
