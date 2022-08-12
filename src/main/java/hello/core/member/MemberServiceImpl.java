@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 public class MemberServiceImpl implements MemberService{
 
     private final MemberRepository memberRepository; // 추상화에도 의존하고 구체화에도 의존하고 있다 DIP위반
-    @Autowired // 의존관계를 자동으로 주입해주는 에노테이션
+    @Autowired // 의존관계를 자동으로 주입해주는 에노테이션  // 기본적으로 type으로 조회를 한다
     public MemberServiceImpl(MemberRepository memberRepository) {
         this.memberRepository=memberRepository;
     }
